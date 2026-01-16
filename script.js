@@ -24,5 +24,7 @@ box4.addEventListener('click',()=>{
 
 document.getElementById('btn1').addEventListener('click',function() {
     const name =document.getElementById('nameinput').value;
-    document.getElementById('heading').textContent='Hello , '+name;
+    if (name.trim() !== '') {
+        document.getElementById('heading').textContent='Hello , '+name;
+    }
 });
